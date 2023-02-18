@@ -1,0 +1,201 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,html{
+    width: 100%; 
+}
+
+body::-webkit-scrollbar{
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: rgb(114, 114, 210);
+    border-radius: 2px;
+}
+
+body::-webkit-scrollbar-track{
+    background: black;
+}
+
+.container{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://wallpapercave.com/uwp/uwp2284758.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .texto{
+    color: white;
+    font-size: 3rem ;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.light{
+    background-color: #fff !important;
+}
+.navegation{
+    top:0;
+    left: 0;
+    width: 3rem;
+    height: 100vh;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.688);
+    position: fixed;
+    z-index: 2;
+}
+
+.navegation ul {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.navegation ul li a{
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 9px;
+}
+
+.navegation ul li a:hover {
+    color: rgb(114, 114, 210);
+    font-size: 27px;
+}
+
+.selectd{
+    color: rgb(114, 114, 210) !important;
+    font-size: 27px !important;
+}
+
+.navegation ul li a:hover{
+    color: rgb(114, 114, 210);
+    font-size: 27px;
+}
+
+.slides{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slides .contimg{
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    height: 100%;
+}
+
+.item{
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+}
+
+.item:first-child{
+    margin-left: -100%;
+}
+.item img{
+    width: 100vw;
+    height: 100vh;
+}
+
+.arrow{
+    width: 50px;
+    height: 100%;
+    border-radius: 30px;
+    display: flex;
+    font-size:22px;
+    text-decoration: solid;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 999;
+    color: rgb(114, 114, 210);
+}
+
+.arrow p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: black;
+    color: rgb(114, 114, 210);
+    user-select: none;
+}
+
+.arrow p:hover{
+    background-color: rgb(114, 114, 210);
+    color: white;
+    user-select: none;
+}
+
+
+#left{
+    margin-left: 49px;
+}
+
+#right{
+    margin-right: 49px;
+}
+
+
+.sobre{
+    width: 100%;
+    height: 100vh;
+    background-color:rgb(0, 0, 0); 
+ 
+}
+.coisas{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    font-size: 23px;
+}
+.texto01{
+    padding: 0 30px;
+    width: 50%;
+    color: white;
+}
+.texto02{
+    padding: 30px;
+    width: 50%;
+    color: white; 
+}
+
+
+footer{
+    height: 25px;
+    text-align: center;
+    text-transform: bolder;
+    background-color:black;
+    color: white;
+    justify-items: center;
+}
+
+
